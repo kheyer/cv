@@ -9,8 +9,12 @@ import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Karl Heyer",
   initials: "KH",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/SanFrancisco",
+  location1: "San Francisco, CA",
+  locationLink1: "https://www.google.com/maps/place/SanFrancisco",
+  location2: "Los Angeles, CA",
+  locationLink2: "https://www.google.com/maps/place/LosAngeles",
+  location3: "Honolulu, HI",
+  locationLink3: "https://www.google.com/maps/place/Honolulu",
   about:
     "Machine Learning Engineer with a focus on drug discovery and bioscience",
   summary:
@@ -178,6 +182,28 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Emb Opt",
+      techStack: ["Python", "Numpy"],
+      description:
+        "A python library for running hill climbing algorithms in embedding spaces, with a focus on searching vector databases",
+      logo: DmaiLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/DarkMatterAI/emb_opt",
+      },
+    },
+    {
+      title: "Emb Opt Server",
+      techStack: ["FastAPI", "Docker", "MongoDB", "Redis"],
+      description:
+        "A multi-container service for running search with the Emb Opt library, including a RESTful API server, backend database, job queue, and worker container",
+      logo: DmaiLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/DarkMatterAI/emb_opt_server",
+      },
+    },
+    {
       title: "Chem Templates",
       techStack: ["Python", "RDKit"],
       description:
@@ -197,6 +223,76 @@ export const RESUME_DATA = {
       link: {
         label: "github.com",
         href: "https://github.com/DarkMatterAI/chem_templates_server",
+      },
+    },
+    {
+      title: "Molecular Reinforcement Learning",
+      techStack: ["Python", "Pytorch", "RDKit"],
+      description:
+        "A python library for designing molecular compounds using a combination of machine learning and generative AI",
+      logo: DmaiLogo,
+      link: {
+        label: "github.com",
+        href: "https://github.com/DarkMatterAI/mrl",
+      },
+    },
+    {
+      title: "In-House ML Library",
+      techStack: ["Contract", "Python", "Pytorch", "scikit-learn"],
+      description: "A custom machine learning library for a scientist team with a focus on auto-ML and usability by lab scientists with little programming background",
+      logo: DmaiLogo,
+    },
+    {
+      title: "GB-GA Molecular Design",
+      techStack: ["Contract", "Python", "RDKit", "Docker"],
+      description: "A production system for molecular design using graph based genetic algorithms (GB-GA) compatible with an arbitrary reward function",
+      logo: DmaiLogo,
+    },
+    {
+      title: "ML Inference Endpoint Templates",
+      techStack: ["Contract", "Python", "Docker"],
+      description: "A template library to help scientists deploy custom ML models as docker containers using ECS and Sagemaker",
+      logo: DmaiLogo,
+    },
+    {
+      title: "Molecule Vector Database",
+      techStack: ["Contract", "Python", "Pytorch", "Qdrant"],
+      description: "Built a vector database system for large chemical libraries, including vector database backend, RESTful API query server, and batch process embedding computation",
+      logo: DmaiLogo,
+    },
+    {
+      title: "RNA-Seq Patient Subtyping",
+      techStack: ["Neumora", "R", "Bioconductor"],
+      description: "Used RNA-Seq analysis to identify patient subtypes in patient populations with mental health indicators",
+      logo: NeumoraLogo,
+    },
+    {
+      title: "Autoscaling Docking Service",
+      techStack: ["BTRX", "Python", "Docker", "Kubernetes", "CCDC"],
+      description: "Built an autoscaling kubernetes service running CCDC molecular docking",
+      logo: BTRXLogo,
+    },
+    {
+      title: "Reinforcement Learning Molecular Design",
+      techStack: ["BTRX", "Pytorch", "RDKit"],
+      description: "Developed a system combining generative AI and reinforcement learning to design optimized molecules for multiple drug programs",
+      logo: BTRXLogo,
+    },
+    {
+      title: "ADMET Prediction Pipeline",
+      techStack: ["BTRX", "Pytorch", "RDKit"],
+      description: "Deployed a production system to predict ADMET properties of molecules using in-house laboratory data",
+      logo: BTRXLogo,
+    },
+    {
+      title: "Pooled DNA Assembly",
+      techStack: ["Zymergen"],
+      description:
+        "A molecular biology technique for assembling DNA plasmids in a deterministic multiplexed fashion",
+      logo: ZymergenLogo,
+      link: {
+        label: "patents.google.com",
+        href: "https://patents.google.com/patent/US20210324378A1/en",
       },
     },
   ],
