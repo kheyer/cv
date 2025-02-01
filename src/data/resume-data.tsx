@@ -18,7 +18,7 @@ export const RESUME_DATA = {
   about:
     "Machine Learning Engineer with a focus on drug discovery and bioscience",
   summary:
-    "As a Machine Learning Engineer, I have successfully deployed high impact solutions to problems in drug discovery, RNA-Seq, small molecule design, and more. I leverage my background as a wet lab scientist to work effectively between developer teams and scientist teams, ensuring critical domain expertise is incorporated into ML solutions. Currently I work mainly in Python, PyTorch and the AWS stack.",
+    "As a Machine Learning Engineer, I have successfully deployed high impact solutions to problems in drug discovery, small molecule design, and more. I leverage my background as a chemical engineer and lab scientist to work effectively between developer teams and scientist teams, ensuring critical domain expertise is incorporated into ML solutions. Currently I work mainly in Python, PyTorch and the AWS stack.",
   avatarUrl: "https://avatars.githubusercontent.com/u/38166299?v=4",
   personalWebsiteUrl: "https://github.com/kheyer",
   contact: {
@@ -69,7 +69,7 @@ export const RESUME_DATA = {
         "Developed open source python libraries applying machine learning and generative AI to problems in cheminformatics and drug design. Technologies: PyTorch, Generative AI, LLMs, RDKit, FastAPI, Docker",
     },
     {
-      company: "Independent Contractor",
+      company: "Machine Learning Engineer (Independent Contractor)",
       link: "https://www.linkedin.com/in/karl-heyer/",
       badges: ["Remote"],
       title: "Machine Learning Engineer",
@@ -77,7 +77,7 @@ export const RESUME_DATA = {
       start: "2022",
       end: "2023",
       description:
-        "Worked for client companies developing in-house PyTorch libraries, ETL data pipelines, and production systems for training and deploying machine learning models. Technologies: PyTorch, Python, RDKit, RabbitMQ , Docker, Kubernetes, AWS (EC2, Lambda, Sagemaker, S3)",
+        "Contract machine learning engineer helping clients deploy robust AI/ML solutions to their business problems. Technologies: PyTorch, Python, RDKit, RabbitMQ, Docker, Kubernetes, SQL, MongoDB, AWS (EC2, Lambda, Sagemaker, S3), Modal",
     },
     {
       company: "Neumora",
@@ -98,7 +98,7 @@ export const RESUME_DATA = {
       logo: BTRXLogo,
       start: "2020",
       end: "2021",
-      description: "Designed, developed and productionized BlackThorn's chem/ML systems to support multiple drug design programs with a suite of tools including data tracking/warehouse, ETL pipelines, predictive models, and generative models for drug design. Technologies: Python, PyTorch, RDKit, Docker, Kubernetes, AWS (EC2, Sagemaker, S3, Redshift)",
+      description: "Led AI/ML initiatives for Blackthorn’s drug discovery team, developing end-to-end systems for ADMET prediction, molecular docking and generative modeling using deep learning and reinforcement learning. Architected and supervised implementation of cloud infrastructure, managing two data engineers to build ETL pipelines integrating lab data with AWS Redshift. Technologies: Python, PyTorch, RDKit, Docker, Kubernetes, AWS (EC2, Sagemaker, S3, Redshift)",
     },
     {
       company: "Zymergen (Acquired by Ginkgo Bioworks)",
@@ -108,7 +108,7 @@ export const RESUME_DATA = {
       logo: ZymergenLogo,
       start: "2017",
       end: "2019",
-      description: "As a member of the R&D team, I helped develop, scale, and productionize novel molecular biology methods for large scale pooled DNA assembly and high throughput bioinformatics analysis pipelines. I worked across the full scale range from microliter bench top scale to factory production.",
+      description: "As a member of the R&D team, I helped develop, scale, and productionize novel molecular biology methods for large scale pooled DNA assembly and high throughput bioinformatics analysis pipelines. I worked across the full scale range from microliter bench top scale to factory production. Responsibilities included working across departments to transfer complex protocols and oversee pilot runs of novel R&D methods at industrial scale.",
     },
   ],
   skills: [
@@ -146,6 +146,48 @@ export const RESUME_DATA = {
         "FastAPI"
       ],
       description: "A platform for using vector databases to accelerate virtual screening for drug discovery",
+      logo: DmaiLogo,
+    },
+    {
+      title: "LLM RAG Pipeline",
+      techStack: ["Contract", "Python", "Pytorch", "vLLM", "Modal", "RAG"],
+      description: "Built retrieval-augmented-generation pipeline for document search and document Q&A of client’s internal documents. Built on Llama3-70B-instruct and Quadrant vector database, deployed to Modal",
+      logo: DmaiLogo,
+    },
+    {
+      title: "ML Inference Endpoint Templates",
+      techStack: ["Contract", "Python", "FastAPI", "Docker"],
+      description: "Created custom template library to help scientists deploy ML models as a FastAPI app in a docker container served using ECS and Sagemaker",
+      logo: DmaiLogo,
+    },
+    {
+      title: "LLM for Document Summarization",
+      techStack: ["Contract", "Python", "Pytorch", "vLLM", "LoRA", "Modal"],
+      description: "Fine-tuned open source LLM (Mixtral 8x7B) using LoRA on client's proprietary document summarization corpus. Deployed inference endpoint on Modal using vLLM.",
+      logo: DmaiLogo,
+    },
+    {
+      title: "Virtual Screening Active Learning Server",
+      techStack: ["Contract", "Python", "Pytorch", "Docker", "FastAPI"],
+      description: "Built active learning server managing online learning for multiple proxy functions based on data from expensive docking and FEP simulations, reducing cost and accelerating virtual screening of large molecular libraries",
+      logo: DmaiLogo,
+    },
+    {
+      title: "Molecule Vector Database",
+      techStack: ["Contract", "Pytorch", "Qdrant", "FastAPI"],
+      description: "Built and deployed large-scale molecular search system handling 10^9 molecules, incorporating vector database backend, GPU-accelerated embedding computation, and RESTful API. Developed embedding compression methods to significantly reduce cost.Built a vector database system for large chemical libraries, including vector database backend, RESTful API query server, and batch process embedding computation",
+      logo: DmaiLogo,
+    },
+    {
+      title: "In-House ML Library",
+      techStack: ["Contract", "Python", "Pytorch", "scikit-learn"],
+      description: "Created a custom AutoML framework enabling non-ML-expert scientists to build and deploy machine learning models for domain specific applications",
+      logo: DmaiLogo,
+    },
+    {
+      title: "GB-GA Molecular Design",
+      techStack: ["Contract", "Python", "RDKit", "Docker"],
+      description: "A production system for molecular design using graph based genetic algorithms (GB-GA) compatible with an arbitrary reward function",
       logo: DmaiLogo,
     },
     {
@@ -237,30 +279,6 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "In-House ML Library",
-      techStack: ["Contract", "Python", "Pytorch", "scikit-learn"],
-      description: "A custom machine learning library for a scientist team with a focus on auto-ML and usability by lab scientists with little programming background",
-      logo: DmaiLogo,
-    },
-    {
-      title: "GB-GA Molecular Design",
-      techStack: ["Contract", "Python", "RDKit", "Docker"],
-      description: "A production system for molecular design using graph based genetic algorithms (GB-GA) compatible with an arbitrary reward function",
-      logo: DmaiLogo,
-    },
-    {
-      title: "ML Inference Endpoint Templates",
-      techStack: ["Contract", "Python", "Docker"],
-      description: "A template library to help scientists deploy custom ML models as docker containers using ECS and Sagemaker",
-      logo: DmaiLogo,
-    },
-    {
-      title: "Molecule Vector Database",
-      techStack: ["Contract", "Python", "Pytorch", "Qdrant"],
-      description: "Built a vector database system for large chemical libraries, including vector database backend, RESTful API query server, and batch process embedding computation",
-      logo: DmaiLogo,
-    },
-    {
       title: "RNA-Seq Patient Subtyping",
       techStack: ["Neumora", "R", "Bioconductor"],
       description: "Used RNA-Seq analysis to identify patient subtypes in patient populations with mental health indicators",
@@ -268,7 +286,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Autoscaling Docking Service",
-      techStack: ["BTRX", "Python", "Docker", "Kubernetes", "CCDC"],
+      techStack: ["BTRX", "Python", "Docker", "Kubernetes", "RabbitMQ", "CCDC"],
       description: "Built an autoscaling kubernetes service running CCDC molecular docking",
       logo: BTRXLogo,
     },
